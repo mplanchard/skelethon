@@ -1,0 +1,7 @@
+[bdist_wheel]
+{% if conf.python_version == "universal" %}
+universal=1
+{% elif conf.python_version[0] == "3" %}
+python-tag=py3
+{% elif conf.python_version[0] == "2" %}
+python-tag=py2
